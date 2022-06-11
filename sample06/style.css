@@ -1,0 +1,313 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+body {
+ /* プロジェクトによって変動 */
+ min-width: 1000px;
+ color: #000;
+ line-height: 1.6;
+ font-weight: 400;
+ font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+
+ width: 100%;
+ height: 100%;
+ 
+ font-variant-numeric: tabular-nums;
+ /* safari hover対策 */
+ -webkit-font-smoothing: antialiased;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+ display:block;
+}
+
+ul, ol {
+ list-style:none;
+}
+
+blockquote, q {
+ quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+
+a {
+ margin:0;
+ padding:0;
+ vertical-align:baseline;
+ text-decoration: none;
+ color: inherit;
+}
+
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000;
+ font-style:italic;
+ font-weight:bold;
+}
+
+del {
+ text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+ display:block;
+ height:1px;
+ border:0;
+ border-top:1px solid #cccccc;
+ margin:1em 0;
+ padding:0;
+}
+
+input, select {
+ vertical-align:middle;
+}
+
+img {
+ vertical-align: bottom;
+ line-height: 1.0;
+}
+
+button {
+ line-height: 1.0;
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ outline: none;
+ padding: 0;
+ appearance: none;
+}
+
+/* スタート */
+
+
+.header-3 {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 270px;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 850px;
+  height: 30px;
+  padding: 0;
+  margin:0 auto;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+
+.header-button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #252A2F;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .header-post {
+    display: none;
+  }
+}
+
+main{
+  color: #252A2F;
+}
+
+.mainvisual img{
+  margin:0;
+  padding:0;
+  width:100vw;
+  height: 420px;
+  object-fit: cover;
+}
+
+.main-content{
+  width: 845px;
+  margin: 90px auto 0;
+}
+
+section {
+ margin-bottom:140px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom:70px;
+}
+
+.info {
+  height:270px;
+  display:flex;
+  flex-flow: column;
+  justify-content:space-between;
+}
+
+.work-table{
+  height: 370px;
+  display:flex;
+  flex-flow: column;
+  justify-content:space-between;
+}
+
+.work-list {
+  display: flex;
+  justify-content:space-between;
+}
+
+.news-list {
+  border-top: 1px solid #c8c8c8;
+}
+
+.news-list li{
+  display: flex;
+  padding:15px 0;
+  border-bottom:1px solid #c8c8c8;
+}
+
+.day {
+  margin:0 15px;
+}
+
+.text {
+  margin-left: 70px;
+}
+
+.contact-list{
+  height: 270px;
+  display:flex;
+  flex-flow: column;
+  justify-content:space-between;
+}
+
+.contact-wrap{
+  display: flex;
+  justify-content:space-between;
+}
+
+
+
+input[type=text] {
+  border: 1px solid #c8c8c8;
+  width: 718px;
+  height: 35px;
+}
+
+textarea[name=message] {
+  border: 1px solid #c8c8c8;
+	width: 718px;
+	height: 160px;
+}
+
+.a {
+  width: 100%;
+  margin-top: 35px;
+  text-align: center;
+}
+
+input[name=btn_submit]{
+  width: 202px;
+  height: 57px;
+	padding: 20px 85px;
+	font-size: 100%;
+	color: #fff;
+	cursor: pointer;
+	border:1px solid #fff;
+	background: #252A2F;
+}
+
+input[name=btn_submit]:hover {
+  border-color: #252A2F;
+  color: #252A2F;
+  background: #fff;
+}
+
+footer{
+  width: 100%;
+  height: 35px;
+  background: #252A2F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p{
+  color: #fff;
+  font-size: 10px;
+}

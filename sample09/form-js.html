@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>合計金額 計算</h1>
+  <form action="#" method="post">
+    <table>
+      
+      <tr><td><input type="text" name="価格" size="20" maxlength="10" id="num1">価格</td></tr>
+      <tr><td><input type="text" name="個数" size="20" maxlength="10" id="num2">個数</td></tr>
+      
+      <tr><td><input type="button" onclick="showMessage()" value="計算する"></td></tr>
+    </table>
+  </form>
+  <p id="output-message1"></p>
+  <p id="output-message2"></p>
+  <p id="output-message3"></p>
+
+  <script>
+    'use strict';
+      //showMessage関数が開かれたら{}の処理を行う
+      function showMessage(){
+        const kakaku = document.getElementById("num1").value;
+        const kosu = document.getElementById("num2").value;
+        const goukei = kakaku*kosu;
+        console.log('価格:' + kakaku);//.valueで実際に入力された値を取り出している
+        console.log('個数' + kosu);
+        console.log('合計:' + goukei);
+        document.getElementById("output-message1").innerHTML = '価格:' + kakaku + '円';
+        document.getElementById("output-message2").innerHTML = '個数:' + kosu + '個';
+        document.getElementById("output-message3").innerHTML = '合計:' + goukei + '円';
+      }
+  </script>
+</body>
+</html>

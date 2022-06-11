@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="kadai3.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="box">
+    <div class="box2">
+      <form>
+         <div class="a">
+          <input type="button" value="サイコロを振る" id="saikoro">
+         </div>
+      </form>
+          <div class="img">
+           <img src="img/6.png" id="image">
+          </div>
+    </div>
+  </div>
+      <script>
+        'use strict'
+        var img = ["img/1.png","img/2.png","img/3.png","img/4.png","img/5.png","img/6.png"];
+        const test2 = document.getElementById("saikoro");
+        test2.addEventListener("click", function() {
+          var min = 0 ;
+          var max = 5 ;
+
+          var a = Math.floor( Math.random() * (max + 1 - min) ) + min ;
+          document.getElementById("image").src = img[a];
+        });
+      </script>
+</body>
+</html>

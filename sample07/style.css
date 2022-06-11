@@ -1,0 +1,162 @@
+/*リセットcss */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+}
+
+
+header {
+/*ヘッダーに余白を作る */
+  width: 100vw;
+  height: 60px;
+  background-color: #fff;
+  padding-left:20%;
+  padding-right: 20%;
+/*positionプロパティーで画面の上部にヘッダーを固定(絶対位置) */
+  
+/*FlexBoxでタイトルとナビを横並びにする */
+  display: flex;
+  align-items: center;
+}
+
+p{
+  margin:0;
+}
+
+.logo {
+  margin-top: 8px;
+  width:120px;
+  height:40px;
+}
+
+a {	
+  text-decoration: none;
+  color: #24292e;
+}
+
+ul {
+/*各リスト項目の左側にある点「・」を非表示にして、無駄な余白をなくす */
+  list-style: none;
+  margin: 0;
+/*各項目を横並びにする */
+  display: flex;
+}
+
+/*横並びの項目が繋がっているので、「li」要素の余白を調整し、文字を小さくしてモダンに */
+li {
+  margin: 0 0 0 30px;
+  font-size: 14px;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-weight: 400;
+}
+
+/*タイトルとナビゲーションが両サイドの配置 */
+nav {
+  margin: 0 0 0 auto;
+}
+
+.mainvisual{
+  text-align: right;
+}
+
+.mainvisual img{
+  text-align: left;
+  margin:0;
+  padding:0;
+  width:100vw;
+  height: 600px;
+  object-fit: cover;
+}
+
+#about{
+  margin-top: 85px;
+  text-align: center;
+}
+
+#Bicycle{
+  margin-top: 85px;
+  text-align: center;
+}
+
+h2{
+  margin: auto;
+  color: #383F45;
+  font-size: 32px;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-weight: 700;
+  display: inline-block;/*中に含まれる文字や画像の大きさに応じて、要素の大きさが自動で変わる*/
+  border-bottom:1px solid #666666; /*下線の太さと色*/
+  padding-bottom:1px;/*下線の間隔*/
+}
+
+.info{
+  margin: 50px auto;
+  width:550px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.info img{
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.info_text{
+  margin:50px;
+  text-align: left;
+}
+
+h3{
+  font-size: 16px;
+  margin-top: 0;
+}
+
+p{
+  font-size: 14px;
+}
+
+.blog_list{
+  margin: 50px auto;
+}
+
+.blog{
+  padding:0;
+  text-align: center;
+  /*要素に定義するだけで、その直下の要素が並列になる*/
+  display: flex;
+  /*「要素の展開方向（並列の場合は横方向、縦列の場合は縦方向）の要素の配置方法」を設定*/
+  justify-content: center;
+  
+}
+
+.blog li{
+  display: inline;
+}
+
+.blog li a img{
+  width: 270px;
+  height: 180px;
+}
+
+footer {
+  width: 100%;
+  height: 35px; 
+  text-align: center;
+  background-color: #fff;
+}
+footer p {
+  padding-top:10px;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Hiragino Kaku Gothic ProN";
+  color: #383e45;
+}
