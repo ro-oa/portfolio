@@ -1,0 +1,140 @@
+body{
+  margin: 0 40px;
+  padding-top: 90px;
+}
+
+.navbar{
+  padding:40px 24px;
+}
+
+.navbar-brand{
+  color: #333333;
+}
+
+.card{
+  border: 0;
+  width: 45%
+}
+
+.pic{
+  padding:0;
+}
+
+.c-img{
+  border-radius: 0;
+}
+
+.fo-top{
+  margin-bottom: 160px;
+}
+
+.fo-bottom ul{
+  padding:0;
+  list-style: none;
+  display:flex;
+}
+
+.fo-bottom ul li{
+  margin-right: 15px;
+}
+
+a{
+  text-decoration: none;
+  color:#333333;
+}
+
+.fo-bottom{
+  display:flex;
+  justify-content: space-between;
+}
+
+.pro-name{
+  margin:40px 0;
+  font-family: Hiragino Kaku Gothic ProN;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+
+}
+
+.box{
+  margin:0;
+  padding:0;
+}
+
+
+.tex{
+  margin:40px 0;
+}
+
+.tex p{
+  font-family: Hiragino Kaku Gothic ProN;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+  margin:0;
+}
+
+.view{
+  font-family: Hiragino Kaku Gothic ProN;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+  margin-top:45px;
+}
+
+.back{
+  font-family: Hiragino Kaku Gothic ProN;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+  margin-top:70px;
+}
+
+.page{
+  margin-top:40px;
+}
+
+.pro-top-fot{
+  margin-top: 130px;
+}
+
+.tex-box-2{
+  width: 600px;
+}
+
+.fot-m{
+  margin-top: 60px;
+}
+
+@media screen and (min-width:768px){
+  .card{
+    width:23%;
+  }
+  .box{
+    margin:0;
+    padding:0;
+    width:800px;
+    height: 400px;
+    display: flex;
+    justify-content:space-between;
+  }
+  
+  .pic-box{
+    width:400px;
+  }
+
+  .tex{
+    margin-top:0;
+  }
+  
+  .tex-box{
+    width:340px;
+  }
+  }
+
+  @media screen and (max-width:768px){
+    .tex-box-2{
+      width:auto;
+    }
+  }

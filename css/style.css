@@ -1,0 +1,82 @@
+.body{
+  width:100vw;
+  margin-top: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.TextTyping a:active {
+  color: #000;
+}
+
+.hero{
+  background-image: url(../img/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  min-height: 300px;
+}
+
+.jumbotron-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.site-name {
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.h3-title {
+  margin-top: 100px;
+}
+
+.btn-black {
+  border-radius: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Avenir', serif;
+}
+
+.btn-black:hover {
+   background-color: #fff;
+   color: #000;
+}
+
+.silder-a {
+  text-decoration: none;
+  color: #000;
+}
+
+.silder-a:hover {
+  opacity: 0.5 ;
+  color: #000;
+}
+
+.about-body{
+  margin-bottom: 100px;
+}
+
+.coment {
+  margin: 100px 0;
+}
+
+.sub-p {
+  margin-left: 53px;
+}
+
+@media only screen and (min-width:1024px) {
+  .bx-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+}
+
+

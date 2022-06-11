@@ -1,0 +1,5 @@
+.jumbotron-extend {
+  position: relative;
+  width: 100vw;
+  background: url(../img/header.png);
+}
